@@ -3,11 +3,21 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Add a constraint that if twin two digits appear
+then they never appear other boxes at the unit.
+This makes reducing the search space effectively
+because it eliminates possibilities of digits
+even if they are not determined yet.
+
+In my solution, find the candidates of twins from keys
+that may take a value from only two digits at first.
+Then find the other twin from each (row, col, square, or diagonal) unit.
+Finally eliminate twin digits from boxes if twins are found.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Add a constraint that all digits appears just once at diagonal boxes.
+In particular, applying strategies to diagonal boxes same as other units like row units.
 
 ### Install
 
